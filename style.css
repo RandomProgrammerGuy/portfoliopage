@@ -1,1 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wittgenstein', serif;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.navitems li {
+    list-style: none;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #72342e;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.navlink:visited {
+    color: #72342e;
+}
+
+.navlink:hover {
+    color: #db6f63;
+}
+
+.menubar {
+    padding: 20px 40px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.menubar .logo {
+    width: 60px;
+    height: 60px;
+    background-image: url(./assets/Icon-inactive.png);
+    background-size: contain;
+    background-position: center;
+    transition: all 0.2s;
+}
+
+.menubar .logo:hover {
+    background-image: url(./assets/icon-active.png);
+}
+
+.menubar .navitems {
+    display: flex;
+    gap: 2rem;
+}
+
+.togglebutton {
+    display: none;
+}
+
+.togglebutton span {
+    color: #72342e;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.togglebutton span:hover{
+    color: #db6f63;
+}
+
+.bodysection {
+    height: 100vh;
+    background-color: rgb(236, 200, 172);
+}
