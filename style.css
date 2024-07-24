@@ -119,6 +119,26 @@ body {
     text-align: center;
 }
 
+.bodytextcenter {
+    text-align: center;
+    color: #72342e;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.bodylink {
+    color: #db6f63;
+    transition: all 0.2s;
+}
+
+.bodylink:hover {
+    color: #2d1412 !important;
+}
+
+.bodylink:visited {
+    color: #db6f63;
+}
+
 .welcometext {
     font-size: 2rem;
     font-weight: 500;
@@ -225,7 +245,42 @@ body {
     background-position: 40%;
 }
 
+.resumelink a:visited {
+    color: #72342e;
+}
 
+.resumecontainer {
+    margin-top: 50px;
+    width: 800px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: calc((100vw - 800px)/2);
+}
+
+.resumebox {
+    background-color: #72342e;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.two-wide {
+    grid-column: span 2;
+}
+
+.rboxtitle, .rboxmaininfo, .rboxsecondinfo {
+    color: rgb(236, 200, 172);
+}
+
+.rboxtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.rboxmaininfo {
+    font-size: 2.5rem;
+}
 
 @media(max-width: 900px) {
     .menubar .navitems {
