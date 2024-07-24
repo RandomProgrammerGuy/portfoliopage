@@ -119,6 +119,12 @@ body {
     text-align: center;
 }
 
+.bodytext {
+    text-align: center;
+    margin: 20px 300px;
+    font-size: 1.5em;
+}
+
 .bodytextcenter {
     text-align: center;
     color: #72342e;
@@ -159,6 +165,7 @@ body {
 }
 
 .bodytitle {
+    margin-top: 30px;
     text-align: center;
     font-size: 4rem;
 }
