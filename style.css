@@ -289,6 +289,60 @@ body {
     font-size: 2.5rem;
 }
 
+#aboutcontact {
+    height: 80vh !important;
+}
+
+.footer {
+    height: 50vh;
+    background-color: #72342e;
+}
+
+.footertitle, .footertext {
+    text-align: center;
+    color: rgb(236, 200, 172);
+}
+
+.footertitle {
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.footertext {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-a, .footerlink {
+    color: rgb(236, 200, 172);
+    transition: all 0.2s;
+}
+
+.footer-a:visited, .footerlink:visited {
+    color: rgb(236, 200, 172);
+}
+
+.footer-a:hover, .footerlink:hover {
+    color: #db6f63;
+}
+
+.footerlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 50px 100px;
+}
+
+.footerlink {
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
 @media(max-width: 900px) {
     .menubar .navitems {
         display: none;
