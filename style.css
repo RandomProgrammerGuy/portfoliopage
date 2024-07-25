@@ -111,6 +111,42 @@ body {
     background-color: rgb(236, 200, 172);
 }
 
+.langgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 30px;
+}
+
+.langbutton {
+    background-color: #72342e;
+    height: 100px;
+    border-radius: 100px;
+    transition: all 0.2s;
+}
+
+.langbutton:hover {
+    background-color: #db6f63;
+}
+
+.langbutton a {
+    color: rgb(236, 200, 172);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langbutton a:visited {
+    color: rgb(236, 200, 172);
+}
+
 .welcometext, .welcomescroll, .bodytext, .welcometitle, .bodytitle {
     color: #72342e;
 }
@@ -429,6 +465,22 @@ body {
         height: 90vh;
     }
 
+    .langgrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 10px;
+    }
+    
+    .langbutton {
+        height: 60px;
+    }
+    
+    .langbutton a {
+        font-size: 1.5em;
+    }
+
     #welcomediv {
         height: 100vh;
     }
@@ -527,6 +579,21 @@ body {
 }
 
 @media(max-width: 300px) {
+
+    .langgrid {
+        gap: 15px;
+        width: 95vw;
+        margin-left: 2.5vw;
+        margin-top: 10px;
+    }
+    
+    .langbutton {
+        height: 50px;
+    }
+    
+    .langbutton a {
+        font-size: 1.25em;
+    }
 
     .welcometitle {
         font-size: 2.5em;
