@@ -202,7 +202,7 @@ body {
 
 #progrcard {
     background: url('https://images.unsplash.com/photo-1615525137689-198778541af6?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 120%;
+    background-position: 200%;
     background-repeat: no-repeat;
     background-color: #72342e;
     background-size: cover;
@@ -218,7 +218,7 @@ body {
 
 #photocard {
     background: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 135%;
+    background-position: 200%;
     background-repeat: no-repeat;
     background-color: #72342e;
     background-size: cover;
@@ -230,7 +230,7 @@ body {
 
 #musiccard {
     background: url('https://images.unsplash.com/photo-1643240150781-379a783242a9?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 150%;
+    background-position: 200%;
     background-repeat: no-repeat;
     background-color: #72342e;
     background-size: cover;
@@ -242,7 +242,7 @@ body {
 
 #graphcard {
     background: url('https://images.unsplash.com/photo-1569323112693-492fe7ec1d3b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 150%;
+    background-position: 200%;
     background-repeat: no-repeat;
     background-color: #72342e;
     background-size: cover;
@@ -336,6 +336,7 @@ body {
 }
 
 .footerlink {
+    text-align: center;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -343,7 +344,66 @@ body {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 1200px) {
+    .welcometitle {
+        font-size: 4.5em;
+    }
+
+    .welcometext {
+        font-size: 1.75em;
+    }
+
+    .welcomescroll {
+        font-size: 1em;
+    }
+
+    .verticalcardholder {
+        gap: 32px;
+        padding-top: 20px;
+    }
+
+    .verticalcard {
+        font-size: 1em;
+    }
+
+    .resumecontainer {
+        width: 80vw;
+        grid-template-columns: 1fr;
+        margin-left: 10vw;
+    }
+
+    .bodytext, .bodytextcenter {
+        font-size: 1.5em;
+        margin: 20px 10vw ;
+    }
+
+    .bodytitle {
+        font-size: 3em;
+        margin: 0px 10px;
+    }
+
+    .footer {
+        height: 60vh;
+    }
+
+    .footertitle {
+        font-size: 4em;
+    }
+
+    .footerlinks {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin: 50px 70px;
+    }
+
+    .footerlink {
+        font-size: 1em;
+    }
+
+    .footertext {
+        font-size: 0.8em;
+    }
+
     .menubar .navitems {
         display: none;
     }
@@ -365,6 +425,215 @@ body {
 }
 
 @media(max-width: 500px) {
+    .bodysection {
+        height: 90vh;
+    }
+
+    #welcomediv {
+        height: 100vh;
+    }
+
+    #aboutcontact {
+        height: 90vh;
+    }
+
+    .welcometitle {
+        font-size: 3em;
+        padding: 10px;
+    }
+
+    .welcometext {
+        font-size: 1.3em;
+    }
+
+    .welcomescroll {
+        font-size: 1em;
+    }
+
+    .verticalcardholder {
+        gap: 32px;
+        padding-top: 20px;
+    }
+
+    .verticalcard {
+        font-size: 1em;
+        width: 51px;
+        height: 60vh;
+    }
+    
+    .vcardtext {
+        text-align: center;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    .resumecontainer {
+        width: calc(100vw - 20px) !important;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-left: 10px !important;
+    }
+
+    .resumebox {
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    .rboxtitle {
+        font-size: 0.75em;
+    }
+    
+    .rboxmaininfo {
+        font-size: 1.75em;
+    }
+
+    .rboxsecondinfo {
+        font-size: 0.8em;
+    }
+
+    .bodytext, .bodytextcenter {
+        font-size: 1em;
+        margin: 20px 10vw ;
+    }
+
+    .bodytitle {
+        font-size: 2em !important;
+        margin: 0px 10px;
+    }
+
+    .footertitle {
+        font-size: 3em;
+    }
+
+    .footerlinks {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: 50px 10px;
+    }
+
+    .footerlink {
+        font-size: 1em;
+    }
+
+    .footertext {
+        margin: 10px 10px;
+        font-size: 0.8em;
+    }
+
+    .dropdown {
+        width: calc(100vw - 100px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media(max-width: 300px) {
+
+    .welcometitle {
+        font-size: 2.5em;
+    }
+
+    .welcometext {
+        font-size: 1.1em;
+    }
+
+    .welcomescroll {
+        font-size: 0.9em;
+    }
+
+    .verticalcardholder {
+        gap: 15px;
+        padding-top: 20px;
+    }
+    
+    .vcardtext {
+        text-align: center;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
+    .resumecontainer {
+        width: 80vw;
+        grid-template-columns: 1fr;
+        margin-left: 10vw;
+    }
+
+    .resumebox {
+        border-radius: 15px !important;
+        padding: 10px !important;
+    }
+
+    .rboxtitle {
+        font-size: 0.25em !important;
+    }
+    
+    .rboxmaininfo {
+        font-size: 1.25em !important;
+    }
+
+    .rboxsecondinfo {
+        font-size: 0.5em !important;
+    }
+
+    .bodytext, .bodytextcenter {
+        font-size: 1em;
+        margin: 20px 10vw ;
+    }
+
+    .bodytitle {
+        font-size: 2em !important;
+        margin: 0px 10px;
+    }
+
+    .resumebox {
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    .rboxtitle {
+        font-size: 0.75em;
+    }
+    
+    .rboxmaininfo {
+        font-size: 1.75em;
+    }
+
+    .rboxsecondinfo {
+        font-size: 0.8em;
+    }
+
+    .bodytext, .bodytextcenter {
+        font-size: 0.75em;
+        margin: 20px 10vw ;
+    }
+
+    .bodytitle {
+        font-size: 2.5em;
+        margin: 0px 10px;
+    }
+
+    .footer {
+        height: 80vh;
+    }
+
+    .footertitle {
+        font-size: 3em;
+    }
+
+    .footerlinks {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 50px 10px;
+    }
+
+    .footerlink {
+        font-size: 1em;
+    }
+
+    .footertext {
+        margin: 10px 10px;
+        font-size: 0.8em;
+    }
+
     .dropdown {
         width: calc(100vw - 100px);
         backdrop-filter: blur(10px);
