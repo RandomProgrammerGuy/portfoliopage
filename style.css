@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Wittgenstein', serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -418,6 +419,8 @@ body {
 }
 
 .tpcontent {
+    border-top: 2px solid #72342e;
+    border-bottom: 2px solid #72342e;
     margin-left: 50px;
     height: calc(100vh - 200px);
     overflow: scroll;
@@ -669,6 +672,85 @@ body {
         width: calc(100vw - 100px);
         backdrop-filter: blur(10px);
     }
+
+
+    .teleport {
+        padding: 150px 10px;
+    }
+    
+    .tpmenu {
+        padding: 10px;
+        height: 300px;
+        width: 100px;
+        border-radius: 20px;
+        line-height: 10px;
+    }
+
+    .tpmenuitem {
+        margin-bottom: 20px;
+    }
+
+
+    .tpmenuitem a {
+        font-size: 0.7em;
+    }
+
+    .tpcontent {
+        margin-left: 10px;
+        height: calc(90vh - 200px);
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+    
+    .tpsection {
+        padding-bottom: 10px;
+    }
+    
+    .tptitle {
+        font-size: 2em;
+        font-weight: 700;
+        color: #72342e;
+    }
+    
+    .tpsectionitemtitle {
+        font-size: 1em;
+        font-weight: 700;
+        color: #72342e;
+    }
+    
+    .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
+        color: #2d1412;
+    }
+    
+    .tpsectionitemlocation, .tpsectionitemdate {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    .tpsectionitemtitle, .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
+        text-indent: 30px;
+        padding-bottom: 5px;
+    }
+    
+    .tpsectionitemdesc {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    
+    .tplink {
+        color: #72342e;
+        transition: all 0.2s;
+    }
+    
+    .tplink:hover {
+        color: #db6f63 !important;
+    }
+    
+    .tplink:visited {
+        color: #72342e;
+    }
 }
 
 @media(max-width: 300px) {
@@ -798,4 +880,26 @@ body {
         width: calc(100vw - 100px);
         backdrop-filter: blur(10px);
     }
+   
+    .tptitle {
+        font-size: 1.5em;
+    }
+    
+    .tpsectionitemtitle {
+        font-size: 0.75em;
+    }
+
+    .tpsectionitemlocation, .tpsectionitemdate {
+        font-size: 0.75em;
+    }
+    
+    .tpsectionitemtitle, .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
+        text-indent: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .tpsectionitemdesc {
+        font-size: 0.75em;
+    }
+
 }
