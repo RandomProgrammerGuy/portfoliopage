@@ -379,6 +379,99 @@ body {
     letter-spacing: 3px;
 }
 
+.teleport {
+    padding: 150px 100px;
+    display: flex;
+}
+
+.tpmenu {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(212, 174, 146);
+    height: 500px;
+    width: 600px;
+    border-radius: 50px;
+    line-height: 75px;
+}
+
+.tpmenuitem {
+    list-style: none;
+    
+}
+
+.tpmenuitem a {
+    font-size: 1.25em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #72342e;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.tpmenuitem a:visited {
+    color: #72342e;
+}
+
+.tpmenuitem a:hover {
+    color: #db6f63;
+}
+
+.tpcontent {
+    margin-left: 50px;
+    height: calc(100vh - 200px);
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.tpsection {
+    padding-bottom: 50px;
+}
+
+.tptitle {
+    font-size: 4em;
+    font-weight: 700;
+    color: #72342e;
+}
+
+.tpsectionitemtitle {
+    font-size: 2em;
+    font-weight: 700;
+    color: #72342e;
+}
+
+.tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
+    color: #2d1412;
+}
+
+.tpsectionitemlocation, .tpsectionitemdate {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.tpsectionitemtitle, .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
+    text-indent: 30px;
+}
+
+.tpsectionitemdesc {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.tplink {
+    color: #72342e;
+    transition: all 0.2s;
+}
+
+.tplink:hover {
+    color: #db6f63 !important;
+}
+
+.tplink:visited {
+    color: #72342e;
+}
 
 @media(max-width: 1200px) {
     .welcometitle {
