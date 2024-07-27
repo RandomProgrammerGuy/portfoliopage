@@ -505,13 +505,9 @@ body {
         font-size: 1em;
     }
 
-    .verticalcardholder {
-        gap: 32px;
-        padding-top: 20px;
-    }
-
-    .verticalcard {
-        font-size: 1em;
+    .accordion {
+        width: 500px;
+        margin-left: calc((100vw - 500px)/2);
     }
 
     .resumecontainer {
@@ -612,6 +608,24 @@ body {
 
     .welcomescroll {
         font-size: 1em;
+    }
+
+    #accordionsection {
+        height: 100vh;
+    }
+
+    .accordion {
+        width: 300px;
+        margin-left: calc((100vw - 300px)/2);
+    }
+
+    .accordionpanel:has([aria-expanded = 'true']) {
+        flex-basis: 11em;
+    }
+
+    .accordioncontent .accordiontext {
+        font-size: 0.8em;
+        margin-left: 5em;
     }
 
     .resumecontainer {
@@ -780,7 +794,35 @@ body {
     .welcomescroll {
         font-size: 0.9em;
     }
-    
+
+    #accordionsection {
+        height: 110vh;
+    }
+
+    .accordion {
+        width: 230px;
+        margin-left: calc((100vw - 230px)/2);
+    }
+
+    .accordionpanel {
+        padding-right: 15px;
+    }
+
+    .accordionpanel:has([aria-expanded = 'true']) {
+        flex-basis: 8.5em;
+    }
+
+    .paneltitle {
+        font-size: 0.9em;
+    }
+
+    .accordioncontent .accordiontext {
+        font-size: 0.4em;
+        margin-left: 10em;
+        margin-right: 0;
+    }
+
+
     .resumecontainer {
         width: 80vw;
         grid-template-columns: 1fr;
