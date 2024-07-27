@@ -305,88 +305,6 @@ body {
     font-weight: 700;
 }
 
-.verticalcardholder {
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-}
-
-.verticalcard {
-    display: flex;
-    overflow: hidden;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    width: 100px;
-    height: 60vh;
-    border-radius: 50px;
-    color: rgb(236, 200, 172);
-    text-decoration: none;
-    transition: all 0.2s;
-    justify-content: center;
-}
-
-.verticalcard:visited {
-    color: rgb(236, 200, 172);
-}
-
-.vcardtext {
-    text-align: center;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-}
-
-#progrcard {
-    background: url('https://images.unsplash.com/photo-1615525137689-198778541af6?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 200%;
-    background-repeat: no-repeat;
-    background-color: #72342e;
-    background-size: cover;
-}
-
-#progrcard:hover {
-    background-position: 50%;
-}
-
-#progcard:hover p{
-    box-shadow: 0px 0px 100px black;
-}
-
-#photocard {
-    background: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 200%;
-    background-repeat: no-repeat;
-    background-color: #72342e;
-    background-size: cover;
-}
-
-#photocard:hover {
-    background-position: 50%;
-}
-
-#musiccard {
-    background: url('https://images.unsplash.com/photo-1643240150781-379a783242a9?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 200%;
-    background-repeat: no-repeat;
-    background-color: #72342e;
-    background-size: cover;
-}
-
-#musiccard:hover {
-    background-position: 20%;
-}
-
-#graphcard {
-    background: url('https://images.unsplash.com/photo-1569323112693-492fe7ec1d3b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: 200%;
-    background-repeat: no-repeat;
-    background-color: #72342e;
-    background-size: cover;
-}
-
-#graphcard:hover {
-    background-position: 40%;
-}
-
 .resumelink a:visited {
     color: #72342e;
 }
@@ -696,23 +614,6 @@ body {
         font-size: 1em;
     }
 
-    .verticalcardholder {
-        gap: 32px;
-        padding-top: 20px;
-    }
-
-    .verticalcard {
-        font-size: 1em;
-        width: 51px;
-        height: 60vh;
-    }
-    
-    .vcardtext {
-        text-align: center;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
-
     .resumecontainer {
         width: calc(100vw - 20px) !important;
         grid-template-columns: 1fr;
@@ -879,18 +780,7 @@ body {
     .welcomescroll {
         font-size: 0.9em;
     }
-
-    .verticalcardholder {
-        gap: 15px;
-        padding-top: 20px;
-    }
     
-    .vcardtext {
-        text-align: center;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
-
     .resumecontainer {
         width: 80vw;
         grid-template-columns: 1fr;
