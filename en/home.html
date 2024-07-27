@@ -57,27 +57,91 @@
             </div>
 
              <!--PASSIONS SECTION-->
-            <div class="bodysection">
-                <h1 class="bodytitle">Discover my passions</h1>
-                <div class="verticalcardholder">
-                    <a href="" class="verticalcard" id="progrcard">
-                        <p class="vcardtext">Programming</p>
-                    </a>
-
-                    <a href="" class="verticalcard" id="graphcard">
-                        <p class="vcardtext">Design</p>
-                    </a>
-
-                    <a href="" class="verticalcard" id="musiccard">
-                        <p class="vcardtext">Music</p>
-                    </a>
-
-                    <a href="" class="verticalcard" id="photocard">
-                        <p class="vcardtext">Photography</p>
-                    </a>
+             <div class="bodysection" id="accordionsection">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="bodytitle">Discover My Passions</h1>
+                <p class="bodytext">Click/tap on each card to expand it.</p>
+                <div class="accordion">
+                    <div class="accordionpanel">
+    
+                        <!--PROGRAMMING CARD-->
+                        <h3 class="accordionheading" id="panel1heading"> 
+                            <button class="accordiontrigger" aria-controls="panel1title" aria-expanded="true"> 
+                                <span id="panel1title" class="paneltitle">Programming</span> 
+                                <span aria-hidden="false" class="material-symbols-rounded accordionicon">
+                                    terminal
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel1content" aria-labelledby="panel1heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Having coded since age 12, programming is quite a big part of my life.</p>
+                            <p class="accordiontext"><a href="./programming.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--DESIGN CARD-->
+                    <div class="accordionpanel">
+    
+                        <h3 class="accordionheading" id="panel2heading"> 
+                            <button class="accordiontrigger" aria-controls="panel2title" aria-expanded="false"> 
+                                <span id="panel2title" class="paneltitle">Design</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    design_services
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel2content" aria-labelledby="panel2heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">I learnt to use Illustrator and Photoshop back when I was a kid, making graphic design a long-time passion of mine</p>
+                            <p class="accordiontext"><a href="./graphicdesign.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                            <img src="https://images.unsplash.com/photo-1569323112693-492fe7ec1d3b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--MUSIC CARD-->
+                    <div class="accordionpanel">
+    
+                        <h3 class="accordionheading" id="panel3heading"> 
+                            <button class="accordiontrigger" aria-controls="panel3title" aria-expanded="false"> 
+                                <span id="panel3title" class="paneltitle">Music</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    piano
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel3content" aria-labelledby="panel3heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">With 9+ years of experience in music, it's hard to imagine my life without it!</p>
+                            <p class="accordiontext"><a href="./music.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                            <img src="https://images.unsplash.com/photo-1547931295-64c05303a15b?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--PHOTOGRAPHY CARD-->
+                    <div class="accordionpanel">
+        
+                        <h3 class="accordionheading" id="panel4heading"> 
+                            <button class="accordiontrigger" aria-controls="panel4title" aria-expanded="false"> 
+                                <span id="panel4title" class="paneltitle">Photography</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    photo_camera
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel4content" aria-labelledby="panel4heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Every day we see unique and baffling views. These are the sights I try to capture through photography</p>
+                            <p class="accordiontext"><a href="./photography.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <!--RESUME SECTION-->
         <div class="bodysection">
