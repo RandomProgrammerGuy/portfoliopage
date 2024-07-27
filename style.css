@@ -292,8 +292,8 @@ body {
 }
 
 .accordionicon {
-    background-color: rgb(212, 174, 146);
-    color: white;
+    background-color: #72342e;
+    color: rgb(212, 174, 146);
     height: 2em;
     padding: 0.5em;
     border-radius: 500px;
