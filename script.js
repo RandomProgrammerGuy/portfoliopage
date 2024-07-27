@@ -1,13 +1,40 @@
+// DROPDOWN MENU INTERACTION
 const togglebutton = document.querySelector('.togglebutton');
 const togglebuttonicon = document.querySelector('.togglebutton span');
 const dropdown = document.querySelector('.dropdown');
 
 togglebutton.onclick = function () {
-    dropdown.classList.toggle('open')
+    dropdown.classList.toggle('open');
 
     const isopen = dropdown.classList.contains('open')
     if (isopen)
-        togglebuttonicon.innerHTML = 'close'
+        togglebuttonicon.innerHTML = 'close';
     else
-        togglebuttonicon.innerHTML = 'menu'
+        togglebuttonicon.innerHTML = 'menu';
+}
+
+// ACCORDION CARD INTERACTION
+const accordion = document.querySelector('.accordion');
+
+accordion.addEventListener('click', (e) => {
+    const activePanel = e.target.closest('.accordionpanel');
+    if (!activePanel) return;
+    toggleAccordion(activePanel);
+})
+
+function toggleAccordion(panelToActivate) {
+    const buttons = panelToActivate.parentElement.querySelectorAll('.accordiontrigger');
+    const contents = panelToActivate.parentElement.querySelectorAll('.accordioncontent');
+    
+    buttons.forEach((button) => {
+        button.setAttribute('aria-expanded', false);
+    })
+
+    contents.forEach((content) => {
+        content.setAttribute('aria-hidden', true);
+    })
+
+    panelToActivate.querySelector('.accordiontrigger').setAttribute('aria-expanded', true);
+
+    panelToActivate.querySelector('.accordioncontent').setAttribute('aria-hidden', false);
 }

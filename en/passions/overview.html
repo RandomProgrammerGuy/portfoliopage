@@ -3,12 +3,150 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Parsa Farjam</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
-        <script src="../script.js" async defer></script>
+        <!--NAVIGATION BAR-->
+        <header class="header">
+            <nav class="menubar">
+
+                <!--NAVIGATION LOGO-->
+                <div class="logo"><a href="home.html" class="icon"></a></div>
+
+                <!--NAVIGATION LINKS-->
+                <ul class="navitems">
+                    <li class="navitem"><a href="../home.html" class="navlink">Home</a></li>
+                    <li class="navitem"><a href="../passions/overview.html" class="navlink">Passions</a></li>
+                    <li class="navitem"><a href="../resume.html" class="navlink">Résumé</a></li>
+                    <li class="navitem"><a href="./about.html" class="navlink">About</a></li>
+                    <li class="navitem"><a href="../contact.html" class="navlink">Contact</a></li>
+                    <li class="navitem"><a href="../../lang.html" class="navlink">Language</a></li>
+                </ul>
+
+                <!--MENU TOGGLE FOR SMALLER SCREENS-->
+                <div class="togglebutton">
+                    <span class="material-symbols-rounded">
+                        menu
+                    </span>
+                </div>
+
+                <!--DROPDOWN MENU FOR SMALLER SCREENS-->
+                <div class="dropdown">
+                    <li class="navitem"><a href="../home.html" class="navlink">Home</a></li>
+                    <li class="navitem"><a href="../passions.html" class="navlink">Passions</a></li>
+                    <li class="navitem"><a href="../resume.html" class="navlink">Résumé</a></li>
+                    <li class="navitem"><a href="../about.html" class="navlink">About</a></li>
+                    <li class="navitem"><a href="../contact.html" class="navlink">Contact</a></li>
+                    <li class="navitem"><a href="../../lang.html" class="navlink">Language</a></li>
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN CONTENT-->
+        <div class="bodysection" id="accordionsection">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="bodytitle">Discover My Passions</h1>
+            <p class="bodytext">Click/tap on each card to expand it.</p>
+            <div class="accordion">
+                <div class="accordionpanel">
+
+                    <!--PROGRAMMING CARD-->
+                    <h3 class="accordionheading" id="panel1heading"> 
+                        <button class="accordiontrigger" aria-controls="panel1title" aria-expanded="true"> 
+                            <span id="panel1title" class="paneltitle">Programming</span> 
+                            <span aria-hidden="false" class="material-symbols-rounded accordionicon">
+                                terminal
+                            </span>
+                        </button> 
+                    </h3>
+
+                    <div class="accordioncontent" id="panel1content" aria-labelledby="panel1heading" aria-hidden="true" role="region">
+                        <p class="accordiontext">Having coded since age 12, programming is quite a big part of my life.</p>
+                        <p class="accordiontext"><a href="./programming.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                    </div>
+                </div>
+
+                <!--DESIGN CARD-->
+                <div class="accordionpanel">
+
+                    <h3 class="accordionheading" id="panel2heading"> 
+                        <button class="accordiontrigger" aria-controls="panel2title" aria-expanded="false"> 
+                            <span id="panel2title" class="paneltitle">Design</span> 
+                            <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                design_services
+                            </span>
+                        </button> 
+                    </h3>
+
+                    <div class="accordioncontent" id="panel2content" aria-labelledby="panel2heading" aria-hidden="true" role="region">
+                        <p class="accordiontext">I learnt to use Illustrator and Photoshop back when I was a kid, making graphic design a long-time passion of mine</p>
+                        <p class="accordiontext"><a href="./graphicdesign.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                        <img src="https://images.unsplash.com/photo-1569323112693-492fe7ec1d3b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                    </div>
+                </div>
+
+                <!--MUSIC CARD-->
+                <div class="accordionpanel">
+
+                    <h3 class="accordionheading" id="panel3heading"> 
+                        <button class="accordiontrigger" aria-controls="panel3title" aria-expanded="false"> 
+                            <span id="panel3title" class="paneltitle">Music</span> 
+                            <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                piano
+                            </span>
+                        </button> 
+                    </h3>
+
+                    <div class="accordioncontent" id="panel3content" aria-labelledby="panel3heading" aria-hidden="true" role="region">
+                        <p class="accordiontext">With 9+ years of experience in music, it's hard to imagine my life without it!</p>
+                        <p class="accordiontext"><a href="./music.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                        <img src="https://images.unsplash.com/photo-1547931295-64c05303a15b?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                    </div>
+                </div>
+
+                <!--PHOTOGRAPHY CARD-->
+                <div class="accordionpanel">
+    
+                    <h3 class="accordionheading" id="panel4heading"> 
+                        <button class="accordiontrigger" aria-controls="panel4title" aria-expanded="false"> 
+                            <span id="panel4title" class="paneltitle">Photography</span> 
+                            <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                photo_camera
+                            </span>
+                        </button> 
+                    </h3>
+
+                    <div class="accordioncontent" id="panel4content" aria-labelledby="panel4heading" aria-hidden="true" role="region">
+                        <p class="accordiontext">Every day we see unique and baffling views. These are the sights I try to capture through photography</p>
+                        <p class="accordiontext"><a href="./photography.html" class="accordionlink">CLICK/TAP TO LEARN MORE</a></p>
+                        <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!--FOOTER-->
+        <footer class="footer">
+            <h1 class="footertitle">PARSA FARJAM</h1>
+            <div class="footerlinks">
+                <a href="../home.html" class="footerlink">Home</a>
+                <a href="../passions.html" class="footerlink">Passions</a>
+                <a href="../resume.html" class="footerlink">Résumé</a>
+                <a href="../about.html" class="footerlink">About</a>
+                <a href="../contact.html" class="footerlink">Contact</a>
+                <a href="../../lang.html" class="footerlink">Language</a>
+            </div>
+            <p class="footertext">See this website's source code on <a href="https://github.com/RandomProgrammerGuy/portfoliopage" class="footer-a">GitHub</a>.</p>
+        </footer>
     </body>
+    <script src="../../script.js" async defer></script>
 </html>

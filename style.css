@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    color-scheme: light;
+}
+
 body {
     background-color: rgb(236, 200, 172);
 }
@@ -205,6 +209,100 @@ body {
     margin-top: 30px;
     text-align: center;
     font-size: 4rem;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 800px;
+    margin-left: calc((100vw - 800px)/2);
+}
+
+.accordionpanel {
+    position: relative;
+    isolation: isolate;
+    flex-basis: 4.5em;
+    overflow: hidden;
+    padding: 0.75em;
+    padding-right: 3em;
+    border-radius: 2.25em;
+    transition: all 0.5s;
+}
+
+.accordionpanel:has([aria-expanded = 'true']) {
+    flex-basis: 15em;
+}
+
+.accordioncontent .accordiontext {
+    transform: translateY(2rem);
+    opacity: 0;
+    color: rgb(212, 174, 146);
+    transition: all 0.5s;
+    transition-delay: 0.5s ;
+    margin-left: 3.6em;
+    pointer-events: none;
+    font-size: 1.1em;
+}
+
+.accordiontext .accordionlink {
+    color: #db6f63;
+    transition: all 0.2s;
+}
+
+.accordiontext .accordionlink:visited {
+    color: #db6f63;
+}
+
+.accordiontext .accordionlink:hover {
+    color: #fec4be;
+}
+
+.accordionpanel:has([aria-expanded = 'true']) .accordioncontent .accordiontext {
+    transform: translateY(0);
+    opacity: 100%;
+    pointer-events: all;
+}
+
+.accordionimage {
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.accordionpanel:has([aria-expanded = 'true']) .accordionimage {
+    filter: brightness(0.5) blur(1px);
+}
+
+.accordiontrigger {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row-reverse;
+}
+
+.accordionicon {
+    background-color: rgb(212, 174, 146);
+    color: white;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 500px;
+}
+
+.paneltitle {
+    color: rgb(212, 174, 146);
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .verticalcardholder {
