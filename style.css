@@ -114,7 +114,8 @@ body {
 }
 
 .bodysection {
-    height: 100vh;
+    height: auto !important;
+    padding-bottom: 100px;
     background-color: rgb(236, 200, 172);
 }
 
@@ -345,7 +346,8 @@ body {
 }
 
 #aboutcontact {
-    height: 80vh !important;
+    height: auto !important;
+    padding-bottom: 40px;
 }
 
 .footer {
@@ -712,10 +714,6 @@ body {
         font-size: 1em;
     }
 
-    #accordionsection {
-        height: 100vh;
-    }
-
     .accordion {
         width: 300px;
         margin-left: calc((100vw - 300px)/2);
@@ -924,10 +922,6 @@ body {
 
     .welcomescroll {
         font-size: 0.9em;
-    }
-
-    #accordionsection {
-        height: 110vh;
     }
 
     .accordion {
