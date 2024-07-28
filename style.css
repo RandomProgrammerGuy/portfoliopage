@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Wittgenstein:wght@400..900&display=swap');
+
+@keyframes pulsefade {
+    from {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -206,6 +221,12 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     padding-top: 25vh;
+}
+
+.welcomescroll span {
+    animation: pulsefade 2s;
+    animation-iteration-count: infinite;
+    transform: translateY(0.2em);
 }
 
 .bodytitle {
