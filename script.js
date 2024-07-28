@@ -6,14 +6,14 @@ const dropdown = document.querySelector('.dropdown');
 togglebutton.onclick = function () {
     dropdown.classList.toggle('open');
 
-    const isopen = dropdown.classList.contains('open')
+    const isopen = dropdown.classList.contains('open');
     if (isopen)
         togglebuttonicon.innerHTML = 'close';
     else
         togglebuttonicon.innerHTML = 'menu';
 }
 
-// ACCORDION CARD INTERACTION
+// ACCORDION CARD INTERACTION (PASSIONS SECTION)
 const accordion = document.querySelector('.accordion');
 
 accordion.addEventListener('click', (e) => {
@@ -38,3 +38,23 @@ function toggleAccordion(panelToActivate) {
 
     panelToActivate.querySelector('.accordioncontent').setAttribute('aria-hidden', false);
 }
+
+// FADE-ON-SCROLL ANIMATION
+const faders = document.querySelectorAll('.fadein');
+
+const options = {};
+
+const fadeOnScroll = new IntersectionObserver(function(entries, fadeOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.toggle('noopacity');
+            fadeOnScroll.unobserve(entry.target);
+        }
+    })
+}, options);
+
+faders.forEach(fader => {
+    fadeOnScroll.observe(fader);
+})

@@ -1091,12 +1091,10 @@ body {
 }
 
 .fadein {
-    opacity: 0;
-    transform: translateY(50px);
     transition: all 0.5s;
 }
 
-.fadein.appear {
-    opacity: 100%;
-    transform: translateY(0px);
+.noopacity {
+    opacity: 0;
+    transform: translateY(50px);
 }
