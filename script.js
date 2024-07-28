@@ -1,7 +1,10 @@
 // FADE-ON-SCROLL ANIMATION
 const faders = document.querySelectorAll('.fadein');
 
-const options = {};
+const options = {
+    threshold: 0,
+    rootMargin: '0px 0px -200px 0px'
+};
 
 const fadeOnScroll = new IntersectionObserver(function(entries, fadeOnScroll) {
     entries.forEach(entry => {
