@@ -1,3 +1,23 @@
+// FADE-ON-SCROLL ANIMATION
+const faders = document.querySelectorAll('.fadein');
+
+const options = {};
+
+const fadeOnScroll = new IntersectionObserver(function(entries, fadeOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.toggle('noopacity');
+            fadeOnScroll.unobserve(entry.target);
+        }
+    })
+}, options);
+
+faders.forEach(fader => {
+    fadeOnScroll.observe(fader);
+})
+
 // DROPDOWN MENU INTERACTION
 const togglebutton = document.querySelector('.togglebutton');
 const togglebuttonicon = document.querySelector('.togglebutton span');
@@ -38,23 +58,3 @@ function toggleAccordion(panelToActivate) {
 
     panelToActivate.querySelector('.accordioncontent').setAttribute('aria-hidden', false);
 }
-
-// FADE-ON-SCROLL ANIMATION
-const faders = document.querySelectorAll('.fadein');
-
-const options = {};
-
-const fadeOnScroll = new IntersectionObserver(function(entries, fadeOnScroll) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        } else {
-            entry.target.classList.toggle('noopacity');
-            fadeOnScroll.unobserve(entry.target);
-        }
-    })
-}, options);
-
-faders.forEach(fader => {
-    fadeOnScroll.observe(fader);
-})
