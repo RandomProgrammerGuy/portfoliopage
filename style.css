@@ -526,7 +526,7 @@ body {
     padding: 30px;
     width: 800px;
     height: 500px;
-    background: url('https://images.unsplash.com/photo-1643592528154-299d3fc210de?q=80&w=2836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'), white;
+    background: url('./assets/paper.jpeg'), white;
     background-size: cover;
     border-radius: 3em;
 }
