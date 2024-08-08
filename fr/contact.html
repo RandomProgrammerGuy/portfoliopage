@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parsa Farjam - Contact</title>
+        <meta name="description" content="Vous souhaitez contacter Parsa Farjam ? Vous êtes au bon endroit. Écrivez-lui une lettre qu'il adorera !">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header class="header fadein noopacity">
+            <nav class="menubar">
+
+                <!--NAVIGATION LOGO-->
+                <div class="logo"><a href="home.html" class="icon"></a></div>
+
+                <!--NAVIGATION LINKS-->
+                <ul class="navitems">
+                    <li class="navitem"><a href="./accueil.html" class="navlink">Accueil</a></li>
+                    <li class="navitem"><a href="./passions/apercu.html" class="navlink">Passions</a></li>
+                    <li class="navitem"><a href="./resume.html" class="navlink">Résumé</a></li>
+                    <li class="navitem"><a href="./a-propos.html" class="navlink">À Propos</a></li>
+                    <li class="navitem"><a href="./contact.html" class="navlink">Contact</a></li>
+                    <li class="navitem"><a href="../lang.html" class="navlink">Langue</a></li>
+                </ul>
+
+                <!--MENU TOGGLE FOR SMALLER SCREENS-->
+                <div class="togglebutton">
+                    <span class="material-symbols-rounded">
+                        menu
+                    </span>
+                </div>
+
+                <!--DROPDOWN MENU FOR SMALLER SCREENS-->
+                <div class="dropdown">
+                    <li class="navitem"><a href="./accueil.html" class="navlink">Accueil</a></li>
+                    <li class="navitem"><a href="./passions/apercu.html" class="navlink">Passions</a></li>
+                    <li class="navitem"><a href="./resume.html" class="navlink">Résumé</a></li>
+                    <li class="navitem"><a href="./a-propos.html" class="navlink">À Propos</a></li>
+                    <li class="navitem"><a href="./contact.html" class="navlink">Contact</a></li>
+                    <li class="navitem"><a href="../lang.html" class="navlink">Langue</a></li>
+                </div>
+            </nav>
+        </header>
+
+ 
+        <!--MAIN CONTENT-->
+        <div class="bodysection contactsection">
+            <h1 class="bodytitle fadein noopacity">Écrivez-moi Une Lettre</h1>
+            <div class="contactletter fadein noopacity">
+                <p class="lettertext">À: Parsa</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="from_name" value="ParsaFarjam.com Contact">
+                    <input type="hidden" name="access_key" value="1c954910-6ae5-4834-aebf-12608eb152b3">
+                    <div class="name">
+                        <label for="namefield" class="lettertext">De: </label>
+                        <input type="text" name="name" id="namefield" placeholder="Votre nom (facultatif)">
+                    </div>
+                    <textarea name="message" id="messagefield" placeholder="Votre message..." required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="submit" value="Envoyer" id="sendbutton">
+                    <input type="hidden" name="redirect" value="https://parsafarjam.com/fr/contact-reussi.html">
+                </form>
+            </div>
+            <p class="bodytext contactnote">si vous souhaitez que je vous recontacte, veuillez laisser un moyen de vous joindre dans votre message.</p>
+        </div>
+ 
+        <!--FOOTER-->
+        <footer class="footer">
+            <h1 class="footertitle">PARSA FARJAM</h1>
+            <div class="footerlinks">
+                <a href="./home.html" class="footerlink">Accueil</a>
+                <a href="./passions/overview.html" class="footerlink">Passions</a>
+                <a href="./resume.html" class="footerlink">Résumé</a>
+                <a href="./about.html" class="footerlink">À Propos</a>
+                <a href="./contact.html" class="footerlink">Contact</a>
+                <a href="../lang.html" class="footerlink">Langue</a>
+            </div>
+            <p class="footertext">Voir la code de cette site sur <a href="https://github.com/RandomProgrammerGuy/portfoliopage" class="footer-a">GitHub</a>.</p>
+        </footer>
+    </body>
+    <script src="../script.js" async defer></script>
+</html>
