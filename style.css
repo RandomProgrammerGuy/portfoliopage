@@ -434,16 +434,17 @@ body {
     height: 500px;
     width: 600px;
     border-radius: 50px;
-    line-height: 75px;
+    line-height: 20px;
 }
 
 .tpmenuitem {
     list-style: none;
-    
+    margin-top: 27.5px;
+    margin-bottom: 27.5px;
 }
 
 .tpmenuitem a {
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
     color: #72342e;
@@ -826,7 +827,7 @@ body {
 
 
     .tpmenuitem a {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .tpcontent {
