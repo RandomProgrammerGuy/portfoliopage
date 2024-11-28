@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Wittgenstein:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 @keyframes pulsefade {
     from {
@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Wittgenstein', serif;
+    font-family: "Parkinsans", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: rgb(236, 200, 172);
+    background-color: #001624;
 }
 
 .header {
@@ -42,26 +42,26 @@ body {
 
 .navlink {
     text-decoration: none;
-    color: #72342e;
+    color: #ECF5FC;
     transition: all 0.2s;
     text-transform: uppercase;
 }
 
 .navlink:visited {
-    color: #72342e;
+    color: #ECF5FC;
 }
 
 .navlink:hover {
-    color: #db6f63;
+    color: #A9E7FF;
 }
 
 .menubar {
     position: fixed;
     padding: 20px 40px;
-    border-bottom: 1px solid #72342e;
+    border-bottom: 2px solid #1BC9F5;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(236, 200, 172, 0.8);
+    background-color: rgba(0, 53, 87, 0.8);
     width: 100%;
     height: 100px;
     margin: 0 auto;
@@ -96,13 +96,13 @@ body {
 }
 
 .togglebutton span {
-    color: #72342e;
+    color: #ECF5FC;
     transition: all 0.2s;
     cursor: pointer;
 }
 
 .togglebutton span:hover{
-    color: #db6f63;
+    color: #1BC9F5;
 }
 
 .dropdown {
@@ -131,7 +131,7 @@ body {
 .bodysection {
     height: auto !important;
     padding-bottom: 100px;
-    background-color: rgb(236, 200, 172);
+    background-color: #001624;
 }
 
 .langgrid {
@@ -144,18 +144,18 @@ body {
 }
 
 .langbutton {
-    background-color: #72342e;
+    background-color: #ECF5FC;
     height: 100px;
     border-radius: 100px;
     transition: all 0.2s;
 }
 
 .langbutton:hover {
-    background-color: #db6f63;
+    background-color: #1BC9F5;
 }
 
 .langbutton a {
-    color: rgb(236, 200, 172);
+    color: #001624;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 2em;
@@ -167,11 +167,15 @@ body {
 }
 
 .langbutton a:visited {
-    color: rgb(236, 200, 172);
+    color: #001624;
 }
 
-.welcometext, .welcomescroll, .bodytext, .welcometitle, .bodytitle {
-    color: #72342e;
+.welcometext, .welcomescroll, .bodytext {
+    color: #ECF5FC;
+}
+
+.welcometitle, .bodytitle {
+    color: #1BC9F5;
 }
 
 .welcometext, .welcomescroll, .welcometitle {
@@ -186,22 +190,22 @@ body {
 
 .bodytextcenter {
     text-align: center;
-    color: #72342e;
+    color: #ECF5FC;
     margin-top: 20px;
     font-size: 1.5em;
 }
 
 .bodylink {
-    color: #db6f63;
+    color: #1BC9F5;
     transition: all 0.2s;
 }
 
 .bodylink:hover {
-    color: #2d1412 !important;
+    color: #A9E7FF !important;
 }
 
 .bodylink:visited {
-    color: #db6f63;
+    color: #1BC9F5;
 }
 
 .welcometext {
@@ -261,7 +265,7 @@ body {
 .accordioncontent .accordiontext {
     transform: translateY(2rem);
     opacity: 0;
-    color: rgb(212, 174, 146);
+    color: #ECF5FC;
     transition: all 0.5s;
     transition-delay: 0.5s ;
     margin-left: 3.6em;
@@ -270,16 +274,16 @@ body {
 }
 
 .accordiontext .accordionlink {
-    color: #db6f63;
+    color: #1BC9F5;
     transition: all 0.2s;
 }
 
 .accordiontext .accordionlink:visited {
-    color: #db6f63;
+    color: #1BC9F5;
 }
 
 .accordiontext .accordionlink:hover {
-    color: #fec4be;
+    color: #A9E7FF;
 }
 
 .accordionpanel:has([aria-expanded = 'true']) .accordioncontent .accordiontext {
@@ -316,21 +320,21 @@ body {
 }
 
 .accordionicon {
-    background-color: #72342e;
-    color: rgb(212, 174, 146);
+    background-color: #1BC9F5;
+    color: #001624;
     height: 2em;
     padding: 0.5em;
     border-radius: 500px;
 }
 
 .paneltitle {
-    color: rgb(212, 174, 146);
+    color: #1BC9F5;
     font-size: 1.5em;
     font-weight: 700;
 }
 
 .resumelink a:visited {
-    color: #72342e;
+    color: #1BC9F5;
 }
 
 .resumecontainer {
@@ -343,7 +347,7 @@ body {
 }
 
 .resumebox {
-    background-color: #72342e;
+    background-color: #1BC9F5;
     border-radius: 40px;
     padding: 30px;
 }
@@ -353,7 +357,7 @@ body {
 }
 
 .rboxtitle, .rboxmaininfo, .rboxsecondinfo {
-    color: rgb(236, 200, 172);
+    color: #001624;
 }
 
 .rboxtitle {
@@ -373,12 +377,12 @@ body {
 
 .footer {
     height: 50vh;
-    background-color: #72342e;
+    background-color: rgb(0, 53, 87);
 }
 
 .footertitle, .footertext {
     text-align: center;
-    color: rgb(236, 200, 172);
+    color: #1BC9F5;
 }
 
 .footertitle {
@@ -395,16 +399,16 @@ body {
 }
 
 .footer-a, .footerlink {
-    color: rgb(236, 200, 172);
+    color: #ECF5FC;
     transition: all 0.2s;
 }
 
 .footer-a:visited, .footerlink:visited {
-    color: rgb(236, 200, 172);
+    color: #ECF5FC;
 }
 
 .footer-a:hover, .footerlink:hover {
-    color: #db6f63;
+    color: #A9E7FF;
 }
 
 .footerlinks {
@@ -430,7 +434,7 @@ body {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: rgb(212, 174, 146);
+    background-color: rgb(0, 53, 87);
     height: 500px;
     width: 600px;
     border-radius: 50px;
@@ -447,22 +451,22 @@ body {
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
-    color: #72342e;
+    color: #ECF5FC;
     text-transform: uppercase;
     transition: all 0.2s;
 }
 
 .tpmenuitem a:visited {
-    color: #72342e;
+    color: #ECF5FC;
 }
 
 .tpmenuitem a:hover {
-    color: #db6f63;
+    color: #A9E7FF;
 }
 
 .tpcontent {
-    border-top: 2px solid #72342e;
-    border-bottom: 2px solid #72342e;
+    border-top: 2px solid #1BC9F5;
+    border-bottom: 2px solid #1BC9F5;
     margin-left: 50px;
     height: calc(100vh - 200px);
     overflow: scroll;
@@ -476,17 +480,17 @@ body {
 .tptitle {
     font-size: 4em;
     font-weight: 700;
-    color: #72342e;
+    color: #1BC9F5;
 }
 
 .tpsectionitemtitle {
     font-size: 2em;
     font-weight: 700;
-    color: #72342e;
+    color: #1BC9F5;
 }
 
 .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
-    color: #2d1412;
+    color: #ECF5FC;
 }
 
 .tpsectionitemlocation, .tpsectionitemdate {
@@ -506,16 +510,16 @@ body {
 }
 
 .tplink {
-    color: #72342e;
+    color: #1BC9F5;
     transition: all 0.2s;
 }
 
 .tplink:hover {
-    color: #db6f63 !important;
+    color: #A9E7FF !important;
 }
 
 .tplink:visited {
-    color: #72342e;
+    color: #1BC9F5;
 }
 
 .contactsection {
