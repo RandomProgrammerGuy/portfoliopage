@@ -113,7 +113,7 @@ body {
     width: 0px;
     height: 0px;
     padding: 0;
-    background-color: rgba(255, 241, 230, 0.9);
+    background-color: rgba(0, 20, 32, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 120px 0px 120px 60px;
     list-style: none;
@@ -879,16 +879,16 @@ body {
     }
     
     .tplink {
-        color: #72342e;
+        color: #1BC9F5;
         transition: all 0.2s;
     }
     
     .tplink:hover {
-        color: #db6f63 !important;
+        color: #A9E7FF !important;
     }
     
     .tplink:visited {
-        color: #72342e;
+        color: #1BC9F5;
     }
 
     .contactletter {
