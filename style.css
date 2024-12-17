@@ -271,7 +271,7 @@ body {
     isolation: isolate;
     flex-basis: 4.5em;
     overflow: hidden;
-    padding: 0.25em;
+    padding: 0.75em;
     padding-right: 3em;
     border-radius: 2.25em;
     transition: all 0.5s;
