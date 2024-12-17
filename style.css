@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 @keyframes pulsefade {
-    from {
-        opacity: 100%;
+    0% {
+        color: #ECF5FC;
+        font-weight: 100;
     }
 
     50% {
-        opacity: 0;
+        color: #A9E7FF;
+        font-weight: 300;
     }
 
-    to {
-        opacity: 100%;
+    100% {
+        color: #ECF5FC;
+        font-weight: 100;
+    }
+}
+
+@keyframes titlegrowshrink {
+    from {
+        font-weight: 700;
+    }
+
+    50% {
+        font-weight: 900;
+    }
+
+    100% {
+        font-weight: 700;
     }
 }
 
@@ -218,6 +235,8 @@ body {
     font-size: 6rem;
     font-weight: 900;
     text-transform: uppercase;
+    animation: titlegrowshrink 6s;
+    animation-iteration-count: infinite;
 }
 
 .welcomescroll {
@@ -227,8 +246,8 @@ body {
     padding-top: 25vh;
 }
 
-.welcomescroll span {
-    animation: pulsefade 2s;
+.welcomescroll {
+    animation: pulsefade 2s; 
     animation-iteration-count: infinite;
     transform: translateY(0.2em);
 }
@@ -252,7 +271,7 @@ body {
     isolation: isolate;
     flex-basis: 4.5em;
     overflow: hidden;
-    padding: 0.75em;
+    padding: 0.25em;
     padding-right: 3em;
     border-radius: 2.25em;
     transition: all 0.5s;
