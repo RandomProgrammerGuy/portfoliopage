@@ -848,17 +848,17 @@ body {
     .tptitle {
         font-size: 2em;
         font-weight: 700;
-        color: #72342e;
+        color: #1BC9F5;
     }
     
     .tpsectionitemtitle {
         font-size: 1em;
         font-weight: 700;
-        color: #72342e;
+        color: #1BC9F5;
     }
     
     .tpsectionitemlocation, .tpsectionitemdate, .tpsectionitemdesc {
-        color: #2d1412;
+        color: #ECF5FC;
     }
     
     .tpsectionitemlocation, .tpsectionitemdate {
