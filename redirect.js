@@ -1,15 +1,11 @@
 // THIS SCRIPT IS USED TO AUTOMATICALLY REDIRECT THE USER TO THE CORRECT PAGE BASED ON THEIR BROWSER LANGUAGE
 
-const lang = navigator.language || navigator.userLanguage || navigator.browserLanguage || "fallback";
-const metas = document.getElementsByTagName("meta")
+// Detect language
+const lang = navigator.language || navigator.userLanguage || "fallback";
 
-
-if (lang.indexOf("fr") > -1) {
-    metas.refresh.content = "0; url=./fr/accueil.html"
+// Redirect user
+if (lang.startsWith("fr")) {
+  window.location.href = "./fr/accueil.html";
 } else {
-    metas.refresh.content = "0; url=./en/home.html"
+  window.location.href = "./en/home.html";
 }
-
-metas.refresh.setAttribute("http-equiv", "refresh")
-
-console.log(metas.refresh)
