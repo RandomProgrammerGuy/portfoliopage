@@ -3,12 +3,197 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Parsa Farjam</title>
+        <meta name="description" content="Willkommen im Portfolio von Parsa Farjam. Parsa Farjam ist ein junger, visionärer Programmierer, Designer, Fotograf und Musiker. Hier können Sie mehr über Parsa Farjam erfahren, seinen Lebenslauf einsehen und seine Leidenschaften entdecken. Sie können Parsa Farjam auch hier kontaktieren. Sind Sie ein potenzieller Arbeitgeber? Erfahren Sie alles, was Sie über Parsa Farjam wissen müssen, seine Berufserfahrung, Ausbildung, Fähigkeiten und Zertifizierungen.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,500,0..1,-50..200" />
     </head>
     <body>
-        <script src="../script.js" async defer></script>
+        <!--NAVIGATION BAR-->
+        <header class="header fadein noopacity">
+            <nav class="menubar">
+
+                <!--NAVIGATION LOGO-->
+                <div class="logo"><a href="home.html" class="icon"></a></div>
+
+                <!--NAVIGATION LINKS-->
+                <ul class="navitems">
+                    <li class="navitem"><a href="./startseite.html" class="navlink">Startseite</a></li>
+                    <li class="navitem"><a href="./leidenschaften/ubersicht.html" class="navlink">Leidenschaften</a></li>
+                    <li class="navitem"><a href="./lebenslauf.html" class="navlink">Lebenslauf</a></li>
+                    <li class="navitem"><a href="./uber-mich.html" class="navlink">Über Mich</a></li>
+                    <li class="navitem"><a href="./kontaktieren.html" class="navlink">kontaktieren</a></li>
+                    <li class="navitem"><a href="../lang.html" class="navlink">Sprache</a></li>
+                </ul>
+
+                <!--MENU TOGGLE FOR SMALLER SCREENS-->
+                <div class="togglebutton">
+                    <span class="material-symbols-rounded">
+                        menu
+                    </span>
+                </div>
+
+                <!--DROPDOWN MENU FOR SMALLER SCREENS-->
+                <div class="dropdown">
+                    <li class="navitem"><a href="./startseite.html" class="navlink">Startseite</a></li>
+                    <li class="navitem"><a href="./leidenschaften/ubersicht.html" class="navlink">Leidenschaften</a></li>
+                    <li class="navitem"><a href="./lebenslauf.html" class="navlink">Lebenslauf</a></li>
+                    <li class="navitem"><a href="./uber-mich.html" class="navlink">Über Mich</a></li>
+                    <li class="navitem"><a href="./kontaktieren.html" class="navlink">kontaktieren</a></li>
+                    <li class="navitem"><a href="../lang.html" class="navlink">Sprache</a></li>
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN CONTENT-->
+        <div class="pagecontent">
+             <!--WELCOME SECTION-->
+            <div class="bodysection" id="welcomediv">
+                <h2 class="welcometext fadein noopacity">Willkommen! Mein Name ist</h2>
+                <h1 class="welcometitle fadein noopacity">Parsa Farjam</h1>
+                <p class="welcomescroll fadein noopacity">Scrollen Sie nach unten, um mehr zu erfahren</p>
+            </div>
+
+             <!--PASSIONS SECTION-->
+             <div class="bodysection" id="accordionsection">
+                <br>
+                <br>
+                <br>
+                <h1 class="bodytitle fadein noopacity">Entdecke meine Leidenschaften</h1>
+                <p class="bodytext fadein noopacity">Klicken/tippen Sie auf jede Karte, um sie zu vergrößern.</p>
+                <div class="accordion fadein noopacity">
+    
+                    <!--PROGRAMMING CARD-->
+                    <div class="accordionpanel">
+                        <h3 class="accordionheading" id="panel1heading"> 
+                            <button class="accordiontrigger" aria-controls="panel1title" aria-expanded="true"> 
+                                <span id="panel1title" class="paneltitle">Programmierung</span> 
+                                <span aria-hidden="false" class="material-symbols-rounded accordionicon">
+                                    terminal
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel1content" aria-labelledby="panel1heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Ich programmiere seit meinem 12. Lebensjahr, und es ist ein wichtiger Teil meines Lebens.</p>
+                            <p class="accordiontext"><a href="./passions/programming.html" class="accordionlink">KLICKEN/TIPPEN SIE FÜR MEHR INFORMATIONEN</a></p>
+                            <img src="../../assets/programming.jpeg" alt="A computer screen full of code." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--DESIGN CARD-->
+                    <div class="accordionpanel">
+    
+                        <h3 class="accordionheading" id="panel2heading"> 
+                            <button class="accordiontrigger" aria-controls="panel2title" aria-expanded="false"> 
+                                <span id="panel2title" class="paneltitle">Grafikdesign</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    design_services
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel2content" aria-labelledby="panel2heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Schon als Kind habe ich gelernt, mit Illustrator und Photoshop zu arbeiten, und Grafikdesign ist seit langem eine meiner Leidenschaften.</p>
+                            <p class="accordiontext"><a href="./passions/graphicdesign.html" class="accordionlink">KLICKEN/TIPPEN SIE FÜR MEHR INFORMATIONEN</a></p>
+                            <img src="../../assets/design.jpeg" alt="A graphic design tablet with someone drawing on it." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--MUSIC CARD-->
+                    <div class="accordionpanel">
+    
+                        <h3 class="accordionheading" id="panel3heading"> 
+                            <button class="accordiontrigger" aria-controls="panel3title" aria-expanded="false"> 
+                                <span id="panel3title" class="paneltitle">Music</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    piano
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel3content" aria-labelledby="panel3heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Mit mehr als 9 Jahren Musikerfahrung kann ich mir ein Leben ohne Musik nicht mehr vorstellen.</p>
+                            <p class="accordiontext"><a href="./passions/music.html" class="accordionlink">KLICKEN/TIPPEN SIE FÜR MEHR INFORMATIONEN</a></p>
+                            <img src="../../assets/piano.jpeg" alt="A piano close up." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+    
+                    <!--PHOTOGRAPHY CARD-->
+                    <div class="accordionpanel">
+        
+                        <h3 class="accordionheading" id="panel4heading"> 
+                            <button class="accordiontrigger" aria-controls="panel4title" aria-expanded="false"> 
+                                <span id="panel4title" class="paneltitle">Photography</span> 
+                                <span aria-hidden="true" class="material-symbols-rounded accordionicon">
+                                    photo_camera
+                                </span>
+                            </button> 
+                        </h3>
+    
+                        <div class="accordioncontent" id="panel4content" aria-labelledby="panel4heading" aria-hidden="true" role="region">
+                            <p class="accordiontext">Jeden Tag sehen wir einzigartige und fantastische Aussichten. Genau diese Ansichten versuche ich durch Fotografie einzufangen.</p>
+                            <p class="accordiontext"><a href="./passions/photography.html" class="accordionlink">KLICKEN/TIPPEN SIE FÜR MEHR INFORMATIONEN</a></p>
+                            <img src="../../assets/camera.jpeg" alt="A camera lens." class="accordionimage" id="panel1image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--RESUME SECTION-->
+        <div class="bodysection">
+            <h1 class="bodytitle fadein noopacity">Siehe meinen Lebenslauf</h1>
+
+            <p class="bodytextcenter fadein noopacity" style="text-transform: uppercase;">Möchten Sie meinen vollständigen, detaillierten Lebenslauf? <a class="bodylink" href="./resume.html">Hier klicken</a></p>
+
+            <div class="resumecontainer">
+                <div class="resumebox two-wide fadein noopacity" id="study">
+                    <p class="rboxtitle">Derzeit studiert an</p>
+                    <h1 class="rboxmaininfo">Universität Paris-Saclay</h1>
+                    <h2 class="rboxsecondinfo">Doppelstudium Informatik-Mathematik</h2>
+                </div>
+                <div class="resumebox fadein noopacity" id="workexp">
+                    <p class="rboxtitle">Berufserfahrung</p>
+                    <h1 class="rboxmaininfo">2 Jahre</h1>
+                </div>
+                <div class="resumebox fadein noopacity" id="certificates">
+                    <p class="rboxtitle fadein noopacity">Abschlüsse und Zertifikate</p>
+                    <h1 class="rboxmaininfo">4</h1>
+                </div>
+                <div class="resumebox two-wide fadein noopacity" id="languages">
+                    <p class="rboxtitle">Sprachen</p>
+                    <h1 class="rboxmaininfo">Englisch, Franzosich, Deutsch, Persich</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT AND CONTACT SECTION-->
+        <div class="bodysection" id="aboutcontact">
+            <h1 class="bodytitle fadein noopacity">Learn more about me</h1>
+            <p class="bodytext fadein noopacity">
+                Ich wurde am 28. Mai 2005 in Shiraz, Iran, geboren. Im Laufe meiner Jugend haben sich meine Interessen und Leidenschaften weiterentwickelt und mich zu der Person gemacht, die ich heute bin, und geprägt, wie ich meine Freizeit verbringe. Zu diesen Leidenschaften gehören... <a href="./about.html" class="bodylink">weiterlessen</a>
+            </p>
+            <h1 class="bodytitle fadein noopacity">Questions? Inquiries?</h1>
+            <p class="bodytext fadein noopacity">
+                Sie können mich über meine Kontaktseite kontaktieren oder <a href="./contact.html" class="bodylink">hier klicken</a>.
+            </p>
+        </div>
+        
+        <!--FOOTER-->
+        <footer class="footer">
+            <h1 class="footertitle">PARSA FARJAM</h1>
+            <div class="footerlinks">
+                <a href="./startseite.html" class="footerlink">Startseite</a>
+                <a href="./leidenschaften/ubersicht.html" class="footerlink">Leidenschaften</a>
+                <a href="./lebenslauf.html" class="footerlink">Lebenslauf</a>
+                <a href="./uber-mich.html" class="footerlink">Über Mich</a>
+                <a href="./kontaktieren.html" class="footerlink">kontaktieren</a>
+                <a href="../lang.html" class="footerlink">Sprache</a>
+            </div>
+            <p class="footertext">Siehe den Quellcode dieser Website unter <a href="https://github.com/RandomProgrammerGuy/portfoliopage" class="footer-a">GitHub</a>.</p>
+        </footer>
     </body>
+    <script src="../script.js" async defer></script>
 </html>
