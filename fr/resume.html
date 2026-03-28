@@ -53,18 +53,18 @@
                 <!--MENU-->
                 <div class="tpmenu fadein noopacity">
                     <ul class="tpmenulist">
-                        <li class="tpmenuitem"><a href="#workexp">Travail Rémunérée</a></li>
-                        <li class="tpmenuitem"><a href="#unpaidworkexp">Travail Non-Rémunérée</a></li>
-                        <li class="tpmenuitem"><a href="#education">Éducation</a></li>
-                        <li class="tpmenuitem"><a href="#skills">Compétences</a></li>
-                        <li class="tpmenuitem"><a href="#certificates">Certificats</a></li>
-                        <li class="tpmenuitem"><a href="#languages">Langues</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="workexp">Travail Rémunérée</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="unpaidworkexp">Travail Non-Rémunérée</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="education">Éducation</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="skills">Compétences</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="certificates">Certificats</a></li>
+                        <li class="tpmenuitem"><a href="" data-target="languages">Langues</a></li>
                     </ul>
                 </div>
 
                 <!--CONTENT-->
                 <div class="tpcontent fadein noopacity">
-                    <div class="tpsection" id="workexp">
+                    <div class="tpsection" data-section="workexp">
                         <h1 class="tptitle">Expériences Professionnels</h1>
 
                         <li class="tpsectionitemtitle">Moniteur-Bibliothècaire</li>
@@ -88,7 +88,7 @@
                         <p class="tpsectionitemdesc">A servi des dizaines d'étudiants heureux dans l'ensemble. Noté 5.0/5.0 sur le site d'enseignement de l'anglais Preply.</p>
                     </div>
                     <br />
-                    <div class="tpsection" id="unpaidworkexp">
+                    <div class="tpsection" data-section="unpaidworkexp">
                         <h1 class="tptitle">Expériences Associatifs</h1>
 
                         <li class="tpsectionitemtitle">Chargé de Communication</li>
@@ -102,7 +102,7 @@
                         <p class="tpsectionitemdesc">Superviser le fonctionnement de l'équipement musical dans les locaux de l'association Campus en Musique à l'Université Paris-Saclay.</p>
                     </div>
                     <br />
-                    <div class="tpsection" id="education">
+                    <div class="tpsection" data-section="education">
                         <h1 class="tptitle">Éducation</h1>
 
                         <li class="tpsectionitemtitle">Baccalauréat Général (Session 2024)</li>
@@ -116,7 +116,7 @@
                         <p class="tpsectionitemdesc"></p>
                     </div>  
                     <br />
-                    <div class="tpsection" id="skills">
+                    <div class="tpsection" data-section="skills">
                         <h1 class="tptitle">Compétences</h1>
                                                
                         <li class="tpsectionitemtitle">Programmation</li>
@@ -144,7 +144,7 @@
                         <p class="tpsectionitemdesc">Visitez ma page Unsplash en <a href="https://unsplash.com/@parsa_farjam" class="tplink">cliquant ici</a>.</p>
                     </div>
                     <br />
-                    <div class="tpsection" id="certificates">
+                    <div class="tpsection" data-section="certificates">
                         <h1 class="tptitle">Certificats</h1>
 
                         <li class="tpsectionitemtitle">Maîtrise de l'anglais (Score 8,5/9,0 = C2 du CECR)</li>
@@ -170,7 +170,7 @@
                         <p class="tpsectionitemdate">Decembre 2020</p>
                     </div>
                     <br />
-                    <div class="tpsection" id="languages">
+                    <div class="tpsection" data-section="languages">
                         <h1 class="tptitle">Langues</h1>
 
                         <li class="tpsectionitemtitle">Anglais</li>
@@ -210,4 +210,23 @@
         </footer>
     </body>
     <script src="../script.js" async defer></script>
+    <script>
+        document.querySelectorAll('.tpmenuitem a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                const target = document.querySelector(`[data-section="${targetId}"]`);
+                const container = document.querySelector('.tpcontent');
+
+                if (target && container) {
+                    const containerTop = container.getBoundingClientRect().top;
+                    const targetTop = target.getBoundingClientRect().top;
+                    container.scrollTo({
+                        top: container.scrollTop + (targetTop - containerTop),
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </html>
